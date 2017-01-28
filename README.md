@@ -1,2 +1,3 @@
 # japanese_tools
-Scripts I'm using to automate the process of learning Japanese
+Here are some scripts I'm using to automate learning Japanese. Actually it is nothing of the sort (the learning part is far from automatic). Rather I'll publish here what I'm using to create, edit and automate things like vocab lists and [Anki](ankisrs.net) decks. Check out [maroukis.me/japanese](maroukis.me/japanese) for the tools I'm using, namely Anki, Jisho.org, and Python.
+
