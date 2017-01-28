@@ -2,7 +2,7 @@ import os
 import csv
 import xlrd
 import argparse
-
+'''python export_sheet.py -h for arguments. Converts a specified sheet in an excel file to a csv file. For use with Anki's import csv feature.'''
 parser = argparse.ArgumentParser()
 parser.add_argument("fname", type=str, help = ".xls filename to export to csv")
 parser.add_argument('-s', '--sheetnum', type=int, default = 1, choices = [1, 2, 3, 4, 5, 6, 7, 8, 9], help= "sheet position, indexed from 1, to export")
@@ -14,7 +14,7 @@ print(args.fname)
 #ws = wb.worksheets[sheetnum]
 # ctrl v, shift I # esc
 wb = xlrd.open_workbook(args.fname)
-ws = wb.sheet_by_index(args.sheetnum - 1) 
+ws = wb.sheet_by_index(args.sheetnum - 1)
 print('Exporting sheet {} to csv'.format(ws.name))
 output = 'out.csv'
 # csv_file = open(output, 'wb')
